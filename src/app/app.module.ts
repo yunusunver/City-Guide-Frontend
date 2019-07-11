@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
 import { NavComponent } from './nav/nav.component';
 import { CityComponent } from './city/city.component';
+import { CityService } from './services/city.service';
 
 @NgModule({
    declarations: [

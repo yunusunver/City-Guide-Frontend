@@ -12,6 +12,7 @@ import { CityComponent } from './city/city.component';
 import {CityDetailComponent} from './city/city-detail/city-detail.component';
 import {NgxGalleryModule} from 'ngx-gallery';
 import { CityAddComponent } from './city/city-add/city-add.component';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
    declarations: [
@@ -26,7 +27,9 @@ import { CityAddComponent } from './city/city-add/city-add.component';
       BrowserModule,
       HttpClientModule,
       RouterModule.forRoot(appRoutes),
-      NgxGalleryModule
+      NgxGalleryModule,
+      FormsModule,
+      ReactiveFormsModule
    ],
    providers: [],
    bootstrap: [

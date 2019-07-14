@@ -25,7 +25,7 @@ constructor(private httpClient:HttpClient) { }
   }
 
   add(city){
-    this.httpClient.post(this.path+"city/add",city).subscribe();
+    this.httpClient.post(this.path+"cities/add",city).subscribe();
   }
 
 }

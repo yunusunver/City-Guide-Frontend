@@ -4,4 +4,5 @@ export class Photo {
     dateAdded:Date;
     description:string;
     isMain:boolean;
+    url:string;
 }

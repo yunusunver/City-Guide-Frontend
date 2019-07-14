@@ -23,4 +23,9 @@ constructor(private httpClient:HttpClient) { }
   getPhotosByCity(cityId):Observable<Photo[]>{
     return this.httpClient.get<Photo[]>(this.path+"cities/photos/?cityId="+cityId)
   }
+
+  add(city){
+    this.httpClient.post(this.path+"city/add",city).subscribe();
+  }
+
 }

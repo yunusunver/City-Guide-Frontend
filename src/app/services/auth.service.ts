@@ -21,9 +21,9 @@ login(loginUser:LoginUser){
   let headers=new HttpHeaders();
   headers = headers.append("Content-Type","application/json");
   this.httpClient.post(this.path+"login",loginUser,{headers:headers}).subscribe(data=>{
-    this.saveToken(data['tokenString']);
-    this.userToken=data['tokenString'];
-    this.decodedToken = this.jwtHelper.decodeToken(data['tokenString']);
+    this.saveToken(data);
+    this.userToken=data;
+    this.decodedToken = this.jwtHelper.decodeToken(data.toString());
     this.alertifyService.success('sisteme giriş yapıldı.');
     this.router.navigateByUrl('/city');
   });

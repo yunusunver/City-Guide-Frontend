@@ -32,7 +32,7 @@ constructor(
   add(city){
     this.httpClient.post(this.path+"cities/add",city).subscribe(data=>{
       this.alertifyService.success("Sehir başarıyla eklendi.");
-      this.router.navigateByUrl("/citydetail/"+data["id"]);
+      this.router.navigateByUrl("/cityDetail/"+data["id"]);
     });
   }
 

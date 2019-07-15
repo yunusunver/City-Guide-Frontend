@@ -24,5 +24,7 @@
       <input class="form-control mr-sm-2" name="password" [(ngModel)]="loginUser.password" required type="password" placeholder="Password">
       <button class="btn btn-secondary my-2 my-sm-0" [disabled]="!loginForm.valid" type="submit">Login</button>
     </form>
+
+    <button class="btn btn-secondary my-2 my-sm-0" *ngIf="isAuthenticated()" (click)="logOut()" type="submit">Logout</button>
   </div>
 </nav>

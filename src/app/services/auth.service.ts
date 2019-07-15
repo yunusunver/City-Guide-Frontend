@@ -43,6 +43,7 @@ saveToken(token){
 
 logOut(){
   localStorage.removeItem(this.TOKEN_KEY);
+  this.alertifyService.success('sistemden çıkış yapıldı.');
 }
 
 loggedIn(){
